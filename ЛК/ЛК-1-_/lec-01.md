@@ -1821,5 +1821,17 @@ else:  # Нормальный выход
 </style>
 
 <!-- _paginate: skip -->
-![bg opacity:.3](sectiongk.jpeg)
+![bg right opacity:.3](sectiongk.jpeg)
+
+![w:520](logoclr.png)
+
+<br>
+<br>
+
 # Благодарю за внимание!
+
+<br>
+<br>
+
+Вячеслав Алексеевич Чузлов
+к.т.н., доцент ОХИ ИШПР
