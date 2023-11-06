@@ -394,6 +394,29 @@ print(f(5))  # 125
 - Строки документации (в тройных кавычках) должны обобщить поведение функции, описать аргументы, возвращаемые значения, побочные эффекты и ограничения на вызов функции.
 
 ```py
+def calculate_flow_density(x: list[float], d: list[float]) -> float:
+    """
+    Calculates density of material flow
+
+    Parameters
+    ----------
+    x : list[float]
+        A list of components mass fractions.
+    d : list[float]
+        A list of components densities in kg/m^3.
+
+    Returns
+    -------
+    float
+        Flow density [kg/m^3].
+
+    """
+    density = 0
+
+    for i in range(len(x)):
+        density += x[i] / d[i]
+    
+    return density ** -1
 ```
 
 ---
