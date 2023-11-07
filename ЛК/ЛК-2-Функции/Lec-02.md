@@ -465,6 +465,21 @@ def calculate_flow_density(x: list[float], d: list[float]) -> float:
   }
 </style>
 
+![bg](contentinteriorw.jpeg)
+
+# Синтаксис передачи аргументов
+
+<!-- _paginate: skip -->
+
+---
+
+<style scoped>
+  section {
+    justify-content: center;
+    font-size: 30px
+  }
+</style>
+
 <!-- _paginate: skip -->
 ![bg right opacity:.3](sectiongk.jpeg)
 
