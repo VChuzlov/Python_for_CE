@@ -1209,6 +1209,26 @@ tan(alpha) =  [ 0.00000000e+00  1.63312394e+16 -1.22464680e-16]
 
 ---
 
+# Триганометрические функции
+
+Определены также и обратные тригонометрические функции:
+
+<br>
+
+```pycon
+>>> x = [‐1, 0, 1]
+>>> print('x = ', x)
+x = [‐1, 0, 1]
+>>> print('arcsin(x) = ', np.arcsin(x))
+arcsin(x) =  [-1.57079633  0.          1.57079633]
+>>> print('arccos(x) = ', np.arccos(x))
+arccos(x) =  [3.14159265 1.57079633 0.        ]
+>>> print('arctan(x) = ', np.arctan(x))
+arctan(x) =  [-0.78539816  0.          0.78539816]
+```
+
+---
+
 <style scoped>
   section {
     justify-content: center;
