@@ -717,6 +717,15 @@ array([[ 5., 6.],
        [ 8., 9.]])
 ```
 
+---
+
+# Срезы массивов: доступ к подмассивам
+
+<div style="width:800px; margin:0 auto;">
+
+![width:600px](slicies.svg)
+
+</div>
 
 ---
 
