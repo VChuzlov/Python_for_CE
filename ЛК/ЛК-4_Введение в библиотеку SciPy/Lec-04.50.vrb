@@ -1,0 +1,19 @@
+\frametitle{Простые линейные графики}
+\scriptsize
+Рассмотрим построение графика визуализации отдельной функции $y = f(x)$, начав с импорта необходимых для этого модулей:
+\vfill
+\begin{minted}{python}
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-v0_8-whitegrid')
+|\space|
+\end{minted}
+\vfill
+Во все случаях в Matplotlib мы начинаем с создания рисунка и осей координат. В наиболее простом случае это можно выполнить следующим образом (рисунок \ref{fig:fig_3}):
+\vfill
+\begin{minted}[firstnumber=last]{python}
+fig = plt.figure()
+ax = plt.axes()
+|\space|
+\end{minted}
+\vfill

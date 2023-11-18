@@ -1,0 +1,9 @@
+\frametitle{Простые линейные графики}
+\scriptsize
+\begin{figure}[h!]
+^^I\centering
+^^I\includegraphics[width=0.6\linewidth]{./pics/Figure_3}
+^^I\caption{Пустой рисунок с осями координат}
+^^I\label{fig:fig_3}
+\end{figure}
+\vfill
