@@ -269,7 +269,7 @@ array([[ 0.,  0.,  0.],
 
 ![bg](contentinteriorw.jpeg)
 
-# Аттрибуты массивов NumPy для интроспекции
+# Атрибуты массивов NumPy для интроспекции
 
 <!-- _paginate: skip -->
 
