@@ -1,0 +1,101 @@
+% !TeX document-id = {d8b4925c-2057-42a4-b894-2f1a3f1b6345}
+%!TeX TXS-program:compile = txs:///xelatex/[--shell-escape]
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[left=2.5cm, right=2.0cm, top=2.0cm, bottom=2.0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{fontspec}
+
+\setromanfont{Brygada1918}[
+	Path=../fonts/BrygadaFontFiles/,
+	Extension = .ttf,
+	UprightFont=*-Regular,
+	BoldFont=*-Bold,
+	ItalicFont=*-Italic,
+	BoldItalicFont=*-BoldItalic
+]
+
+\setsansfont{ALSSirius}[
+	Path=../fonts/ALSSiriusFiles/,
+	Extension = .otf,
+	UprightFont=*-Regular,
+	BoldFont=*-Bold,
+%ItalicFont=*-Italic,
+%BoldItalicFont=*-BoldItalic
+]
+
+\setmonofont{Consolas}[
+	Path=../fonts/ConsolasFontFiles/,
+	%Scale=0.85,
+	Extension = .ttf,
+	UprightFont=*-Regular,
+	BoldFont=*-Bold,
+	ItalicFont=*-Italic,
+	BoldItalicFont=*-BoldItalic
+]
+
+\usepackage[cache=false]{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+\definecolor{onedarkBckGr}{RGB}{40, 44, 52}
+
+\usemintedstyle[python]{default}
+\setminted[python]{
+	fontsize=\footnotesize,
+	escapeinside=&&,
+	mathescape=true,
+	numbersep=5pt,
+	gobble=2,
+	linenos=true,
+	frame=leftline,
+	framesep=1mm,
+	python3=true,
+}
+
+\usemintedstyle[pycon]{default}
+\setminted[pycon]{
+	fontsize=\scriptsize,
+	escapeinside=||,
+	mathescape=true,
+	numbersep=5pt,
+	gobble=2,
+	frame=none,
+	framesep=1mm,
+	python3=true,
+	linenos=false,
+}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[nooneline]{caption}
+\DeclareCaptionLabelFormat{figure}{Листинг~#2}
+\captionsetup[figure]{
+%	justification=centering,
+	labelsep=endash,
+	labelformat=figure,
+%	font={tiny}
+}
+
+
+\begin{document}
+\section*{Модули проекта}
+%\begin{figure}[!ht]
+%\caption{Модуль с реализацией численных методов решения системы обыкновенных дифференциальных уравнений (\texttt{ode\_solvers.py})}
+Модуль с реализацией функции, содержащей правые части системы дифференциальных уравнений (\texttt{kinetic.py}):
+\inputminted{python}{kinetic.py}
+%\end{figure}
+\newpage
+%\begin{figure}[ht!]
+%\caption{Модуль основной программы (\texttt{main.py})}
+Реализация класса \mintinline{python}|Flow| (\texttt{flow.py}):
+\inputminted{python}{flow.py}
+
+\newpage
+Реализация класса \mintinline{python}|Reactor| (\texttt{reactor.py}):
+\inputminted{python}{reactor.py}
+
+\newpage
+Модуль основной программы (\texttt{main.py}):
+\inputminted{python}{main.py}
+%\end{figure}
+\end{document}
